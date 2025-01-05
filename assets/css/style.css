@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #5ef5ed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: -450px;
+    transition: all .4s ease-in-out;
+}
+
+.section{
+    height: 90vh;
+    border: 10px solid#ededed;
+    padding: 25px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebarToggle{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.sideBarClose{
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.sidebar.show{
+    left: 0;
+}
+
+.backDrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.d-none{
+    display: none;
+}
+
+/* Accordian CSS Starts here */
+
+.acco-heading{
+    border-color: #000;
+    color: #000;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.acc-content{
+    padding: 10px;
+    border: 1px solid#000;
+    margin: 0;
+    display: none;
+}
+
+.acco-heading:hover,
+.acco-heading.focus,
+.acco-heading.active,
+.acco-heading.active{
+    background-color: orange;
+}
+
+.acco-heading.active + .acc-content{
+    display: block;
+}
+
+.acco-heading::before{
+    content:'+';
+    position:absolute;
+    right: 10px;
+}
+
+.acco-heading.active::before{
+    content: '-';
+}
+
+
+
+/* tab css starts here  */
+
+
+.tabHeadding{
+    list-style: none;
+    display: flex;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+.tabHeadding li{
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.tabHeadding li:is(:hover, :focus, :active),
+.tabHeadding li.active{
+    background-color: orange;
+}
+
+
+
+.tabPanel{
+    display: none;
+}
+
+.tabPanel.active{
+    display: block;
+}
+
+
+
+
+

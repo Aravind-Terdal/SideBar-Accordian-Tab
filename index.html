@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar-Accordian-Tab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <i class="fa-solid fa-sliders sidebarToggle" id="sidebarToggle"> </i>
+    <aside class="sidebar" id="sidebar">
+        <i class="fa-solid fa-xmark sideBarClose" id="sideBarClose"></i>
+    </aside>
+
+    <div class="backDrop d-none " id="backDrop"></div>
+
+
+    <section class="section"><h3>Sidebar</h3></section>
+
+
+    
+ <!-- Accordian Section starts here  -->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="acco-panel">
+                <h3 class="acco-heading active">HTML
+                    <i class="fa-solid fa-caret-up "></i>
+                </h3>
+                
+                <p class="acc-content"><strong>HTML</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odio sunt vero iusto laborum adipisci consequatur nobis nesciunt reiciendis harum soluta quos rerum tempora, non, asperiores sapiente eaque voluptatem sed?</p>
+            </div>
+            <div class="acco-panel">
+                <h3 class="acco-heading">CSS
+                    <i class="fa-solid fa-caret-up "></i>
+                </h3>
+                
+                <p class="acc-content"><strong>CSS</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odio sunt vero iusto laborum adipisci consequatur nobis nesciunt reiciendis harum soluta quos rerum tempora, non, asperiores sapiente eaque voluptatem sed?</p>
+            </div>
+            <div class="acco-panel">
+                <h3 class="acco-heading">JS
+                    <i class="fa-solid fa-caret-up "></i>
+                </h3>
+                
+                <p class="acc-content"><strong>JS</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odio sunt vero iusto laborum adipisci consequatur nobis nesciunt reiciendis harum soluta quos rerum tempora, non, asperiores sapiente eaque voluptatem sed?</p>
+            </div>
+            <div class="acco-panel">
+                <h3 class="acco-heading">ANGULAR
+                    <i class="fa-solid fa-caret-up "></i>
+                </h3>
+                
+                <p class="acc-content"><strong>ANGULAR</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odio sunt vero iusto laborum adipisci consequatur nobis nesciunt reiciendis harum soluta quos rerum tempora, non, asperiores sapiente eaque voluptatem sed?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tab section starts here -->
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md offset-md-3">
+            <ul class="tabHeadding">
+                <li class="active" data-id="html">HTML</li>
+                <li data-id="css">CSS</li>
+                <li data-id="js">JS</li>
+                <li data-id="angular">ANGULAR</li>
+            </ul>
+            <div class="tabContent">
+                <div class="card tabPanel active" id="html">
+                    <div class="card-body">
+                        <strong>HTML</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur doloribus minus consequatur reprehenderit natus asperiores provident suscipit est. Maxime animi eveniet blanditiis magni culpa tempora architecto! Repellendus, recusandae repellat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <div class="card tabPanel" id="css">
+                    <div class="card-body">
+                        <strong>CSS</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur doloribus minus consequatur reprehenderit natus asperiores provident suscipit est. Maxime animi eveniet blanditiis magni culpa tempora architecto! Repellendus, recusandae repellat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <div class="card tabPanel" id="js">
+                    <div class="card-body">
+                        <strong>JS</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur doloribus minus consequatur reprehenderit natus asperiores provident suscipit est. Maxime animi eveniet blanditiis magni culpa tempora architecto! Repellendus, recusandae repellat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <div class="card tabPanel" id="angular">
+                    <div class="card-body">
+                        <strong>ANGULAR</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur doloribus minus consequatur reprehenderit natus asperiores provident suscipit est. Maxime animi eveniet blanditiis magni culpa tempora architecto! Repellendus, recusandae repellat!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/accord.js"></script>
+    <script src="./assets/js/tab.js"></script>
+</body>
+</html>
