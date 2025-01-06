@@ -17,6 +17,6 @@ const onAccordianClick = (eve)=>{
 
 
 
-accoHeading.forEach(accHead =>{
+accoHeading.forEach(accHead => {
     accHead.addEventListener("click", onAccordianClick);
 })
