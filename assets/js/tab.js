@@ -1,9 +1,10 @@
-const tabHeadding = [...document.querySelectorAll('.tabHeadding')];
-const tabPanel = [...document.querySelectorAll('.tabPanel')]
+const tabHeadding = document.querySelectorAll('.tabHeadding li');
+const tabPanel = document.querySelectorAll('.tabPanel');
 
 
 
 const onTabHeadClick =(eve) => {
+    eve.stopPropagation()
     let getId = eve.target.getAttribute('data-id');
 
     tabPanel.forEach(tabPan => {
